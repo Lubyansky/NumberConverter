@@ -1,4 +1,4 @@
-namespace Program
+ï»¿namespace Program
 {
 	public class NumberConverter
 	{
@@ -6,29 +6,29 @@ namespace Program
 
         private readonly Dictionary<int, string> numbers = new()
 		{
-			{ 5, "ïÿò"},
-			{ 6, "øåñò"},
-			{ 7, "ñåì"},
-			{ 8, "âîñ"},
-			{ 9, "äåâÿò"},
-			{ 10, "äåñÿò"},
-			{ 11, "îäèííàäöàò"},
-			{ 12, "äâåíàäöàò"},
-			{ 13, "òðèíàäöàò"},
-			{ 14, "÷åòûðíàäöàò"},
-			{ 15, "ïÿòíàäöàò"},
-			{ 16, "øåñòíàäöàò"},
-			{ 17, "ñåìíàäöàò"},
-			{ 18, "âîñåìíàäöàò"},
-			{ 19, "äåâÿòíàäöàò"},
-			{ 20, "äâàäöàò"},
-			{ 30, "òðèäöàò"},
-			{ 40, "ñîðîê"},
-			{ 90, "äåâÿíîñò"},
-			{ 100, "ñò"},
-			{ 1000, "òûñÿ÷" },
-			{ 1_000_000, "ìèëëèîí" },
-			{ 1_000_000_000, "ìèëëèàðä" },
+			{ 5, "Ð¿ÑÑ‚"},
+			{ 6, "ÑˆÐµÑÑ‚"},
+			{ 7, "ÑÐµÐ¼"},
+			{ 8, "Ð²Ð¾Ñ"},
+			{ 9, "Ð´ÐµÐ²ÑÑ‚"},
+			{ 10, "Ð´ÐµÑÑÑ‚"},
+			{ 11, "Ð¾Ð´Ð¸Ð½Ð½Ð°Ð´Ñ†Ð°Ñ‚"},
+			{ 12, "Ð´Ð²ÐµÐ½Ð°Ð´Ñ†Ð°Ñ‚"},
+			{ 13, "Ñ‚Ñ€Ð¸Ð½Ð°Ð´Ñ†Ð°Ñ‚"},
+			{ 14, "Ñ‡ÐµÑ‚Ñ‹Ñ€Ð½Ð°Ð´Ñ†Ð°Ñ‚"},
+			{ 15, "Ð¿ÑÑ‚Ð½Ð°Ð´Ñ†Ð°Ñ‚"},
+			{ 16, "ÑˆÐµÑÑ‚Ð½Ð°Ð´Ñ†Ð°Ñ‚"},
+			{ 17, "ÑÐµÐ¼Ð½Ð°Ð´Ñ†Ð°Ñ‚"},
+			{ 18, "Ð²Ð¾ÑÐµÐ¼Ð½Ð°Ð´Ñ†Ð°Ñ‚"},
+			{ 19, "Ð´ÐµÐ²ÑÑ‚Ð½Ð°Ð´Ñ†Ð°Ñ‚"},
+			{ 20, "Ð´Ð²Ð°Ð´Ñ†Ð°Ñ‚"},
+			{ 30, "Ñ‚Ñ€Ð¸Ð´Ñ†Ð°Ñ‚"},
+			{ 40, "ÑÐ¾Ñ€Ð¾Ðº"},
+			{ 90, "Ð´ÐµÐ²ÑÐ½Ð¾ÑÑ‚"},
+			{ 100, "ÑÑ‚"},
+			{ 1000, "Ñ‚Ñ‹ÑÑÑ‡" },
+			{ 1_000_000, "Ð¼Ð¸Ð»Ð»Ð¸Ð¾Ð½" },
+			{ 1_000_000_000, "Ð¼Ð¸Ð»Ð»Ð¸Ð°Ñ€Ð´" },
 		};
 
 		
@@ -38,12 +38,12 @@ namespace Program
 			{
 				return _case switch
 				{
-					"È" => "íîëü",
-					"Ð" => "íîëÿ",
-					"Ä" => "íîëþ",
-					"Â" => "íîëü",
-					"Ò" => "íîëåì",
-					"Ï" => "íîëå",
+					"Ð˜" => "Ð½Ð¾Ð»ÑŒ",
+					"Ð " => "Ð½Ð¾Ð»Ñ",
+					"Ð”" => "Ð½Ð¾Ð»ÑŽ",
+					"Ð’" => "Ð½Ð¾Ð»ÑŒ",
+					"Ð¢" => "Ð½Ð¾Ð»ÐµÐ¼",
+					"ÐŸ" => "Ð½Ð¾Ð»Ðµ",
 					_ => "",
 				};
 			}
@@ -51,46 +51,46 @@ namespace Program
 			{
 				return _case switch
 				{
-					"È" => gender switch
+					"Ð˜" => gender switch
 					{
-						"Ì" => "îäèí",
-						"Æ" => "îäíà",
-						"Ñ" => "îäíî",
+						"Ðœ" => "Ð¾Ð´Ð¸Ð½",
+						"Ð–" => "Ð¾Ð´Ð½Ð°",
+						"Ð¡" => "Ð¾Ð´Ð½Ð¾",
 						_ => "",
 					},
-					"Ð" => gender switch
+					"Ð " => gender switch
 					{
-						"Ì" => "îäíîãî",
-						"Æ" => "îäíîé",
-						"Ñ" => "îäíîãî",
+						"Ðœ" => "Ð¾Ð´Ð½Ð¾Ð³Ð¾",
+						"Ð–" => "Ð¾Ð´Ð½Ð¾Ð¹",
+						"Ð¡" => "Ð¾Ð´Ð½Ð¾Ð³Ð¾",
 						_ => "",
 					},
-					"Ä" => gender switch
+					"Ð”" => gender switch
 					{
-						"Ì" => "îäíîìó",
-						"Æ" => "îäíîé",
-						"Ñ" => "îäíîìó",
+						"Ðœ" => "Ð¾Ð´Ð½Ð¾Ð¼Ñƒ",
+						"Ð–" => "Ð¾Ð´Ð½Ð¾Ð¹",
+						"Ð¡" => "Ð¾Ð´Ð½Ð¾Ð¼Ñƒ",
 						_ => "",
 					},
-					"Â" => gender switch
+					"Ð’" => gender switch
 					{
-						"Ì" => "îäèí",
-						"Æ" => "îäíó",
-						"Ñ" => "îäíî",
+						"Ðœ" => "Ð¾Ð´Ð¸Ð½",
+						"Ð–" => "Ð¾Ð´Ð½Ñƒ",
+						"Ð¡" => "Ð¾Ð´Ð½Ð¾",
 						_ => "",
 					},
-					"Ò" => gender switch
+					"Ð¢" => gender switch
 					{
-						"Ì" => "îäíèì",
-						"Æ" => "îäíîé",
-						"Ñ" => "îäíèì",
+						"Ðœ" => "Ð¾Ð´Ð½Ð¸Ð¼",
+						"Ð–" => "Ð¾Ð´Ð½Ð¾Ð¹",
+						"Ð¡" => "Ð¾Ð´Ð½Ð¸Ð¼",
 						_ => "",
 					},
-					"Ï" => gender switch
+					"ÐŸ" => gender switch
 					{
-						"Ì" => "îäíîì",
-						"Æ" => "îäíîé",
-						"Ñ" => "îäíîì",
+						"Ðœ" => "Ð¾Ð´Ð½Ð¾Ð¼",
+						"Ð–" => "Ð¾Ð´Ð½Ð¾Ð¹",
+						"Ð¡" => "Ð¾Ð´Ð½Ð¾Ð¼",
 						_ => "",
 					},
 					_ => "",
@@ -100,24 +100,24 @@ namespace Program
 			{
 				return _case switch
 				{
-					"È" => gender switch
+					"Ð˜" => gender switch
 					{
-						"Ì" => "äâà",
-						"Æ" => "äâå",
-						"Ñ" => "äâà",
+						"Ðœ" => "Ð´Ð²Ð°",
+						"Ð–" => "Ð´Ð²Ðµ",
+						"Ð¡" => "Ð´Ð²Ð°",
 						_ => "",
 					},
-					"Ð" => "äâóõ",
-					"Ä" => "äâóì",
-					"Â" => gender switch
+					"Ð " => "Ð´Ð²ÑƒÑ…",
+					"Ð”" => "Ð´Ð²ÑƒÐ¼",
+					"Ð’" => gender switch
 					{
-						"Ì" => "äâà",
-						"Æ" => "äâå",
-						"Ñ" => "äâà",
+						"Ðœ" => "Ð´Ð²Ð°",
+						"Ð–" => "Ð´Ð²Ðµ",
+						"Ð¡" => "Ð´Ð²Ð°",
 						_ => "",
 					},
-					"Ò" => "äâóìÿ",
-					"Ï" => "äâóõ",
+					"Ð¢" => "Ð´Ð²ÑƒÐ¼Ñ",
+					"ÐŸ" => "Ð´Ð²ÑƒÑ…",
 					_ => "",
 				};
 			}
@@ -125,12 +125,12 @@ namespace Program
 			{
 				return _case switch
 				{
-					"È" => "òðè",
-					"Ð" => "òðåõ",
-					"Ä" => "òðåì",
-					"Â" => "òðè",
-					"Ò" => "òðåìÿ",
-					"Ï" => "òðåõ",
+					"Ð˜" => "Ñ‚Ñ€Ð¸",
+					"Ð " => "Ñ‚Ñ€ÐµÑ…",
+					"Ð”" => "Ñ‚Ñ€ÐµÐ¼",
+					"Ð’" => "Ñ‚Ñ€Ð¸",
+					"Ð¢" => "Ñ‚Ñ€ÐµÐ¼Ñ",
+					"ÐŸ" => "Ñ‚Ñ€ÐµÑ…",
 					_ => "",
 				};
 			}
@@ -138,12 +138,12 @@ namespace Program
 			{
 				return _case switch
 				{
-					"È" => "÷åòûðå",
-					"Ð" => "÷åòûðåõ",
-					"Ä" => "÷åòûðåì",
-					"Â" => "÷åòûðå",
-					"Ò" => "÷åòûðüìÿ",
-					"Ï" => "÷åòûðåõ",
+					"Ð˜" => "Ñ‡ÐµÑ‚Ñ‹Ñ€Ðµ",
+					"Ð " => "Ñ‡ÐµÑ‚Ñ‹Ñ€ÐµÑ…",
+					"Ð”" => "Ñ‡ÐµÑ‚Ñ‹Ñ€ÐµÐ¼",
+					"Ð’" => "Ñ‡ÐµÑ‚Ñ‹Ñ€Ðµ",
+					"Ð¢" => "Ñ‡ÐµÑ‚Ñ‹Ñ€ÑŒÐ¼Ñ",
+					"ÐŸ" => "Ñ‡ÐµÑ‚Ñ‹Ñ€ÐµÑ…",
 					_ => "",
 				};
 			}
@@ -151,12 +151,12 @@ namespace Program
 			{
 				return _case switch
 				{
-					"È" => numbers[8] + "åìü",
-					"Ð" => numbers[8] + "üìè",
-					"Ä" => numbers[8] + "üìè",
-					"Â" => numbers[8] + "åìü",
-					"Ò" => numbers[8] + "üìüþ",
-					"Ï" => numbers[8] + "üìè",
+					"Ð˜" => numbers[8] + "ÐµÐ¼ÑŒ",
+					"Ð " => numbers[8] + "ÑŒÐ¼Ð¸",
+					"Ð”" => numbers[8] + "ÑŒÐ¼Ð¸",
+					"Ð’" => numbers[8] + "ÐµÐ¼ÑŒ",
+					"Ð¢" => numbers[8] + "ÑŒÐ¼ÑŒÑŽ",
+					"ÐŸ" => numbers[8] + "ÑŒÐ¼Ð¸",
 					_ => "",
 				};
 			}
@@ -164,12 +164,12 @@ namespace Program
 			{
 				return _case switch
 				{
-					"È" => numbers[number] + "ü",
-					"Ð" => numbers[number] + "è",
-					"Ä" => numbers[number] + "è",
-					"Â" => numbers[number] + "ü",
-					"Ò" => numbers[number] + "üþ",
-					"Ï" => numbers[number] + "è",
+					"Ð˜" => numbers[number] + "ÑŒ",
+					"Ð " => numbers[number] + "Ð¸",
+					"Ð”" => numbers[number] + "Ð¸",
+					"Ð’" => numbers[number] + "ÑŒ",
+					"Ð¢" => numbers[number] + "ÑŒÑŽ",
+					"ÐŸ" => numbers[number] + "Ð¸",
 					_ => "",
 				};
 			}
@@ -177,12 +177,12 @@ namespace Program
 			{
 				return _case switch
 				{
-					"È" => numbers[number] + "",
-					"Ð" => numbers[number] + "à",
-					"Ä" => numbers[number] + "à",
-					"Â" => numbers[number] + "",
-					"Ò" => numbers[number] + "à",
-					"Ï" => numbers[number] + "à",
+					"Ð˜" => numbers[number] + "",
+					"Ð " => numbers[number] + "Ð°",
+					"Ð”" => numbers[number] + "Ð°",
+					"Ð’" => numbers[number] + "",
+					"Ð¢" => numbers[number] + "Ð°",
+					"ÐŸ" => numbers[number] + "Ð°",
 					_ => "",
 				};
 			}
@@ -190,12 +190,12 @@ namespace Program
 			{
 				return _case switch
 				{
-					"È" => declensionNumber(number / 10, gender, _case) + numbers[10],
-					"Ð" => declensionNumber(number / 10, gender, _case) + numbers[10] + "è",
-					"Ä" => declensionNumber(number / 10, gender, _case) + numbers[10] + "è",
-					"Â" => declensionNumber(number / 10, gender, _case) + numbers[10],
-					"Ò" => declensionNumber(number / 10, gender, _case) + numbers[10] + "üþ",
-					"Ï" => declensionNumber(number / 10, gender, _case) + numbers[10] + "è",
+					"Ð˜" => declensionNumber(number / 10, gender, _case) + numbers[10],
+					"Ð " => declensionNumber(number / 10, gender, _case) + numbers[10] + "Ð¸",
+					"Ð”" => declensionNumber(number / 10, gender, _case) + numbers[10] + "Ð¸",
+					"Ð’" => declensionNumber(number / 10, gender, _case) + numbers[10],
+					"Ð¢" => declensionNumber(number / 10, gender, _case) + numbers[10] + "ÑŒÑŽ",
+					"ÐŸ" => declensionNumber(number / 10, gender, _case) + numbers[10] + "Ð¸",
 					_ => "",
 				};
 			}
@@ -203,12 +203,12 @@ namespace Program
 			{
 				return _case switch
 				{
-					"È" => numbers[number] + "î",
-					"Ð" => numbers[number] + "à",
-					"Ä" => numbers[number] + "à",
-					"Â" => numbers[number] + "î",
-					"Ò" => numbers[number] + "à",
-					"Ï" => numbers[number] + "à",
+					"Ð˜" => numbers[number] + "Ð¾",
+					"Ð " => numbers[number] + "Ð°",
+					"Ð”" => numbers[number] + "Ð°",
+					"Ð’" => numbers[number] + "Ð¾",
+					"Ð¢" => numbers[number] + "Ð°",
+					"ÐŸ" => numbers[number] + "Ð°",
 					_ => "",
 				};
 			}
@@ -216,12 +216,12 @@ namespace Program
 			{
 				return _case switch
 				{
-					"È" => "äâåñòè",
-					"Ð" => "äâóõñîò",
-					"Ä" => "äâóìñòàì",
-					"Â" => "äâåñòè",
-					"Ò" => "äâóìÿñòàìè",
-					"Ï" => "äâóõñòàõ",
+					"Ð˜" => "Ð´Ð²ÐµÑÑ‚Ð¸",
+					"Ð " => "Ð´Ð²ÑƒÑ…ÑÐ¾Ñ‚",
+					"Ð”" => "Ð´Ð²ÑƒÐ¼ÑÑ‚Ð°Ð¼",
+					"Ð’" => "Ð´Ð²ÐµÑÑ‚Ð¸",
+					"Ð¢" => "Ð´Ð²ÑƒÐ¼ÑÑÑ‚Ð°Ð¼Ð¸",
+					"ÐŸ" => "Ð´Ð²ÑƒÑ…ÑÑ‚Ð°Ñ…",
 					_ => "",
 				};
 			}
@@ -229,12 +229,12 @@ namespace Program
 			{
 				return _case switch
 				{
-					"È" => declensionNumber(number / 100, gender, _case) + "ñòà",
-					"Ð" => declensionNumber(number / 100, gender, _case) + "ñîò",
-					"Ä" => declensionNumber(number / 100, gender, _case) + "ñòàì",
-					"Â" => declensionNumber(number / 100, gender, _case) + "ñòà",
-					"Ò" => declensionNumber(number / 100, gender, _case) + "ñòàìè",
-					"Ï" => declensionNumber(number / 100, gender, _case) + "ñòàõ",
+					"Ð˜" => declensionNumber(number / 100, gender, _case) + "ÑÑ‚Ð°",
+					"Ð " => declensionNumber(number / 100, gender, _case) + "ÑÐ¾Ñ‚",
+					"Ð”" => declensionNumber(number / 100, gender, _case) + "ÑÑ‚Ð°Ð¼",
+					"Ð’" => declensionNumber(number / 100, gender, _case) + "ÑÑ‚Ð°",
+					"Ð¢" => declensionNumber(number / 100, gender, _case) + "ÑÑ‚Ð°Ð¼Ð¸",
+					"ÐŸ" => declensionNumber(number / 100, gender, _case) + "ÑÑ‚Ð°Ñ…",
 					_ => "",
 				};
 			}
@@ -242,12 +242,12 @@ namespace Program
 			{
 				return _case switch
 				{
-					"È" => declensionNumber(number / 100, gender, _case) + "ñîò",
-					"Ð" => declensionNumber(number / 100, gender, _case) + "ñîò",
-					"Ä" => declensionNumber(number / 100, gender, _case) + "ñòàì",
-					"Â" => declensionNumber(number / 100, gender, _case) + "ñîò",
-					"Ò" => declensionNumber(number / 100, gender, _case) + "ñòàìè",
-					"Ï" => declensionNumber(number / 100, gender, _case) + "ñòàõ",
+					"Ð˜" => declensionNumber(number / 100, gender, _case) + "ÑÐ¾Ñ‚",
+					"Ð " => declensionNumber(number / 100, gender, _case) + "ÑÐ¾Ñ‚",
+					"Ð”" => declensionNumber(number / 100, gender, _case) + "ÑÑ‚Ð°Ð¼",
+					"Ð’" => declensionNumber(number / 100, gender, _case) + "ÑÐ¾Ñ‚",
+					"Ð¢" => declensionNumber(number / 100, gender, _case) + "ÑÑ‚Ð°Ð¼Ð¸",
+					"ÐŸ" => declensionNumber(number / 100, gender, _case) + "ÑÑ‚Ð°Ñ…",
 					_ => "",
 				};
 			}
@@ -271,12 +271,12 @@ namespace Program
 			{
 				return _case switch
 				{
-					"È" => numbers[1000] + "à",
-					"Ð" => numbers[1000] + "è",
-					"Ä" => numbers[1000] + "å",
-					"Â" => numbers[1000] + "ó",
-					"Ò" => numbers[1000] + "åé",
-					"Ï" => numbers[1000] + "å",
+					"Ð˜" => numbers[1000] + "Ð°",
+					"Ð " => numbers[1000] + "Ð¸",
+					"Ð”" => numbers[1000] + "Ðµ",
+					"Ð’" => numbers[1000] + "Ñƒ",
+					"Ð¢" => numbers[1000] + "ÐµÐ¹",
+					"ÐŸ" => numbers[1000] + "Ðµ",
 					_ => "",
 				};
 			}
@@ -284,12 +284,12 @@ namespace Program
 			{
 				return _case switch
 				{
-					"È" => numbers[1000] + "è",
-					"Ð" => numbers[1000],
-					"Ä" => numbers[1000] + "àì",
-					"Â" => numbers[1000] + "è",
-					"Ò" => numbers[1000] + "àìè",
-					"Ï" => numbers[1000] + "àõ",
+					"Ð˜" => numbers[1000] + "Ð¸",
+					"Ð " => numbers[1000],
+					"Ð”" => numbers[1000] + "Ð°Ð¼",
+					"Ð’" => numbers[1000] + "Ð¸",
+					"Ð¢" => numbers[1000] + "Ð°Ð¼Ð¸",
+					"ÐŸ" => numbers[1000] + "Ð°Ñ…",
 					_ => "",
 				};
 			}
@@ -297,12 +297,12 @@ namespace Program
 			{
 				return _case switch
 				{
-					"È" => numbers[1000],
-					"Ð" => numbers[1000],
-					"Ä" => numbers[1000] + "àì",
-					"Â" => numbers[1000],
-					"Ò" => numbers[1000] + "àìè",
-					"Ï" => numbers[1000] + "àõ",
+					"Ð˜" => numbers[1000],
+					"Ð " => numbers[1000],
+					"Ð”" => numbers[1000] + "Ð°Ð¼",
+					"Ð’" => numbers[1000],
+					"Ð¢" => numbers[1000] + "Ð°Ð¼Ð¸",
+					"ÐŸ" => numbers[1000] + "Ð°Ñ…",
 					_ => "",
 				};
 			}
@@ -314,12 +314,12 @@ namespace Program
 			{
 				return _case switch
 				{
-					"È" => numbers[1_000_000],
-					"Ð" => numbers[1_000_000] + "à",
-					"Ä" => numbers[1_000_000] + "ó",
-					"Â" => numbers[1_000_000],
-					"Ò" => numbers[1_000_000] + "îì",
-					"Ï" => numbers[1_000_000] + "å",
+					"Ð˜" => numbers[1_000_000],
+					"Ð " => numbers[1_000_000] + "Ð°",
+					"Ð”" => numbers[1_000_000] + "Ñƒ",
+					"Ð’" => numbers[1_000_000],
+					"Ð¢" => numbers[1_000_000] + "Ð¾Ð¼",
+					"ÐŸ" => numbers[1_000_000] + "Ðµ",
 					_ => "",
 				};
 			}
@@ -327,12 +327,12 @@ namespace Program
 			{
 				return _case switch
 				{
-					"È" => numbers[1_000_000] + "à",
-					"Ð" => numbers[1_000_000] + "îâ",
-					"Ä" => numbers[1_000_000] + "àì",
-					"Â" => numbers[1_000_000] + "à",
-					"Ò" => numbers[1_000_000] + "àìè",
-					"Ï" => numbers[1_000_000] + "àõ",
+					"Ð˜" => numbers[1_000_000] + "Ð°",
+					"Ð " => numbers[1_000_000] + "Ð¾Ð²",
+					"Ð”" => numbers[1_000_000] + "Ð°Ð¼",
+					"Ð’" => numbers[1_000_000] + "Ð°",
+					"Ð¢" => numbers[1_000_000] + "Ð°Ð¼Ð¸",
+					"ÐŸ" => numbers[1_000_000] + "Ð°Ñ…",
 					_ => "",
 				};
 			}
@@ -340,12 +340,12 @@ namespace Program
 			{
 				return _case switch
 				{
-					"È" => numbers[1_000_000] + "îâ",
-					"Ð" => numbers[1_000_000] + "îâ",
-					"Ä" => numbers[1_000_000] + "àì",
-					"Â" => numbers[1_000_000] + "îâ",
-					"Ò" => numbers[1_000_000] + "àìè",
-					"Ï" => numbers[1_000_000] + "àõ",
+					"Ð˜" => numbers[1_000_000] + "Ð¾Ð²",
+					"Ð " => numbers[1_000_000] + "Ð¾Ð²",
+					"Ð”" => numbers[1_000_000] + "Ð°Ð¼",
+					"Ð’" => numbers[1_000_000] + "Ð¾Ð²",
+					"Ð¢" => numbers[1_000_000] + "Ð°Ð¼Ð¸",
+					"ÐŸ" => numbers[1_000_000] + "Ð°Ñ…",
 					_ => "",
 				};
 			}
@@ -357,12 +357,12 @@ namespace Program
 			{
 				return _case switch
 				{
-					"È" => numbers[1_000_000_000],
-					"Ð" => numbers[1_000_000_000] + "à",
-					"Ä" => numbers[1_000_000_000] + "ó",
-					"Â" => numbers[1_000_000_000],
-					"Ò" => numbers[1_000_000_000] + "îì",
-					"Ï" => numbers[1_000_000_000] + "å",
+					"Ð˜" => numbers[1_000_000_000],
+					"Ð " => numbers[1_000_000_000] + "Ð°",
+					"Ð”" => numbers[1_000_000_000] + "Ñƒ",
+					"Ð’" => numbers[1_000_000_000],
+					"Ð¢" => numbers[1_000_000_000] + "Ð¾Ð¼",
+					"ÐŸ" => numbers[1_000_000_000] + "Ðµ",
 					_ => "",
 				};
 			}
@@ -370,12 +370,12 @@ namespace Program
 			{
 				return _case switch
 				{
-					"È" => numbers[1_000_000_000] + "à",
-					"Ð" => numbers[1_000_000_000] + "îâ",
-					"Ä" => numbers[1_000_000_000] + "àì",
-					"Â" => numbers[1_000_000_000] + "à",
-					"Ò" => numbers[1_000_000_000] + "àìè",
-					"Ï" => numbers[1_000_000_000] + "àõ",
+					"Ð˜" => numbers[1_000_000_000] + "Ð°",
+					"Ð " => numbers[1_000_000_000] + "Ð¾Ð²",
+					"Ð”" => numbers[1_000_000_000] + "Ð°Ð¼",
+					"Ð’" => numbers[1_000_000_000] + "Ð°",
+					"Ð¢" => numbers[1_000_000_000] + "Ð°Ð¼Ð¸",
+					"ÐŸ" => numbers[1_000_000_000] + "Ð°Ñ…",
 					_ => "",
 				};
 			}
@@ -383,12 +383,12 @@ namespace Program
 			{
 				return _case switch
 				{
-					"È" => numbers[1_000_000_000] + "îâ",
-					"Ð" => numbers[1_000_000_000] + "îâ",
-					"Ä" => numbers[1_000_000_000] + "àì",
-					"Â" => numbers[1_000_000_000] + "îâ",
-					"Ò" => numbers[1_000_000_000] + "àìè",
-					"Ï" => numbers[1_000_000_000] + "àõ",
+					"Ð˜" => numbers[1_000_000_000] + "Ð¾Ð²",
+					"Ð " => numbers[1_000_000_000] + "Ð¾Ð²",
+					"Ð”" => numbers[1_000_000_000] + "Ð°Ð¼",
+					"Ð’" => numbers[1_000_000_000] + "Ð¾Ð²",
+					"Ð¢" => numbers[1_000_000_000] + "Ð°Ð¼Ð¸",
+					"ÐŸ" => numbers[1_000_000_000] + "Ð°Ñ…",
 					_ => "",
 				};
 			}

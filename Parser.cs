@@ -1,4 +1,4 @@
-using System.Text;
+п»їusing System.Text;
 
 namespace Program
 {
@@ -16,16 +16,16 @@ namespace Program
 
             if(inputNumber > 999_999_999_999)
             {
-                throw new ArgumentException("Число равно триллиону и больше");
+                throw new ArgumentException("Р§РёСЃР»Рѕ СЂР°РІРЅРѕ С‚СЂРёР»Р»РёРѕРЅСѓ Рё Р±РѕР»СЊС€Рµ");
             }
 
-            // преобразование числа в массив чисел в обратном порядке (12345 => [5, 4, 3, 2, 1])
+            // РїСЂРµРѕР±СЂР°Р·РѕРІР°РЅРёРµ С‡РёСЃР»Р° РІ РјР°СЃСЃРёРІ С‡РёСЃРµР» РІ РѕР±СЂР°С‚РЅРѕРј РїРѕСЂСЏРґРєРµ (12345 => [5, 4, 3, 2, 1])
             List<int> numberList = generateNumberList(inputNumber);
 
-            // группировка элементов массива чисел в подмассивы по три элемента ([5, 4, 3, 2, 1] => [[5, 4, 3], [2, 1]])
+            // РіСЂСѓРїРїРёСЂРѕРІРєР° СЌР»РµРјРµРЅС‚РѕРІ РјР°СЃСЃРёРІР° С‡РёСЃРµР» РІ РїРѕРґРјР°СЃСЃРёРІС‹ РїРѕ С‚СЂРё СЌР»РµРјРµРЅС‚Р° ([5, 4, 3, 2, 1] => [[5, 4, 3], [2, 1]])
             int[][] numberListGrouped = groupNumberList(numberList);
 
-            // преобразование подмассивов в конечные числа для преобразования в строку ([[5, 4, 3], [2, 1]] => [12, 1000, 300, 40, 5])
+            // РїСЂРµРѕР±СЂР°Р·РѕРІР°РЅРёРµ РїРѕРґРјР°СЃСЃРёРІРѕРІ РІ РєРѕРЅРµС‡РЅС‹Рµ С‡РёСЃР»Р° РґР»СЏ РїСЂРµРѕР±СЂР°Р·РѕРІР°РЅРёСЏ РІ СЃС‚СЂРѕРєСѓ ([[5, 4, 3], [2, 1]] => [12, 1000, 300, 40, 5])
             int[] numberListConverted = convertNumberList(numberListGrouped);
 
             StringBuilder resultString = new();
@@ -37,17 +37,17 @@ namespace Program
                 int currNumber = numberListConverted[i];
                 string convertNumber;
 
-                // Особое склонение по роду у чисел "1" и "2" перед другими разрядами
+                // РћСЃРѕР±РѕРµ СЃРєР»РѕРЅРµРЅРёРµ РїРѕ СЂРѕРґСѓ Сѓ С‡РёСЃРµР» "1" Рё "2" РїРµСЂРµРґ РґСЂСѓРіРёРјРё СЂР°Р·СЂСЏРґР°РјРё
                 if((currNumber == 1 || currNumber == 2) && i < numberListConverted.Length - 1 && numberListConverted[i + 1] == 1000)
                 {
-                    convertNumber = numberConverter.declensionNumber(currNumber, "Ж", sCase);
+                    convertNumber = numberConverter.declensionNumber(currNumber, "Р–", sCase);
                     resultString.Append(convertNumber + ' ');
 
                     continue;
                 }
                 else if ((currNumber == 1 || currNumber == 2) && i < numberListConverted.Length - 1 && numberListConverted[i + 1] > 1000)
                 {
-                    convertNumber = numberConverter.declensionNumber(currNumber, "М", sCase);
+                    convertNumber = numberConverter.declensionNumber(currNumber, "Рњ", sCase);
                     resultString.Append(convertNumber + ' ');
 
                     continue;
@@ -182,7 +182,7 @@ namespace Program
 
         private string checkSign(long number)
         {
-            return number >= 0 ? "" : "минус ";
+            return number >= 0 ? "" : "РјРёРЅСѓСЃ ";
         }
     }
 }
