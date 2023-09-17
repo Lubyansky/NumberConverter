@@ -4,7 +4,7 @@
 	{
 		public NumberConverter() { }
 
-        private readonly Dictionary<int, string> numbers = new()
+		private readonly Dictionary<int, string> numbers = new()
 		{
 			{ 5, "пят"},
 			{ 6, "шест"},
